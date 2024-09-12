@@ -40,22 +40,20 @@ __attribute__ ((used)) static firmware_options_t flashedOptions = {
 #if defined(Regulatory_Domain_ISM_2400)
     .domain = 0,
 #else
-    #if defined(Regulatory_Domain_AU_915)
+    #if defined(Regulatory_Domain_UA_1010)
     .domain = 0,
-    #elif defined(Regulatory_Domain_FCC_915)
+    #elif defined(Regulatory_Domain_UA_960)
     .domain = 1,
-    #elif defined(Regulatory_Domain_EU_868)
+    #elif defined(Regulatory_Domain_FCC_915)
     .domain = 2,
-    #elif defined(Regulatory_Domain_IN_866)
+    #elif defined(Regulatory_Domain_UA_868)
     .domain = 3,
-    #elif defined(Regulatory_Domain_AU_433)
+    #elif defined(Regulatory_Domain_UA_750)
     .domain = 4,
-    #elif defined(Regulatory_Domain_EU_433)
+    #elif defined(Regulatory_Domain_UA_670)
     .domain = 5,
-    #elif defined(Regulatory_Domain_US_433)
+    #elif defined(Regulatory_Domain_UA_500)
     .domain = 6,
-    #elif defined(Regulatory_Domain_US_433_WIDE)
-    .domain = 7,
     #else
     #error No regulatory domain defined, please define one in user_defines.txt
     #endif
